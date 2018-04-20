@@ -28,6 +28,5 @@
     },
     "config": {
         "bin-dir": "bin"
-    },
-    "target-dir": "EXS/GooglSheetsBundle"
+    }
 }
