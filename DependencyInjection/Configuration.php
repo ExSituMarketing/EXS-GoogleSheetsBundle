@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('exs_googlesheets');
+        $rootNode = $treeBuilder->root('exs_google_sheets');
 
         $rootNode
             ->children()

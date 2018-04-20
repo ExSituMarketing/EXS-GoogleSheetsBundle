@@ -1,0 +1,7 @@
+services:
+    exs_google_sheets.api_client_service:
+            class: EXS\GoogleSheetsBundle\Service\GoogleApiClientService
+            arguments: ['%exs_google_sheets.application_name%', '%exs_google_sheets.credentials%', '%exs_google_sheets.client_secret%']
+    exs_google_sheets.sheets_service:
+            class: EXS\GoogleSheetsBundle\Service\GoogleSheetsApiService
+            arguments: ['@exs_google_sheets.api_client_service']

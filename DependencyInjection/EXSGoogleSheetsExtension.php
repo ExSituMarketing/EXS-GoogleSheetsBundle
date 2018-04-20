@@ -25,8 +25,8 @@ class EXSGoogleSheetsExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
-        $container->setParameter('exs_googlesheets.application_name', $config['application_name']);
-        $container->setParameter('exs_googlesheets.credentials', $config['credentials']);
-        $container->setParameter('exs_googlesheets.client_secret', $config['client_secret']);
+        $container->setParameter('exs_google_sheets.application_name', $config['application_name']);
+        $container->setParameter('exs_google_sheets.credentials', $config['credentials']);
+        $container->setParameter('exs_google_sheets.client_secret', $config['client_secret']);
     }
 }
