@@ -1,0 +1,33 @@
+{
+    "name": "exs/googlesheets-bundle",
+    "type": "symfony-bundle",
+    "description": "This bundle manages Google Spreadsheets sheet operations using Google api.",
+    "keywords": ["Symfony2", "bundle", "google", "spreadshhets", "api", "operation"],
+    "homepage": "https://github.com/ExSituMarketing/EXS-GoogleSheetsBundle",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Ex-Situ Marketing",
+            "email": "lee@ex-situ.com"
+        }
+    ],
+    "require": {
+        "php": "~5.5|~7.0",
+        "symfony/framework-bundle": "~2.8|~3.2",
+        "google/apiclient": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "friendsofphp/php-cs-fixer": "^2.7",
+        "phpstan/phpstan": "^0.8.5"
+    },
+    "autoload": {
+        "psr-4": { "EXS\\GoogleSheetsBundle\\": "" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "target-dir": "EXS/GooglSheetsBundle"
+}
