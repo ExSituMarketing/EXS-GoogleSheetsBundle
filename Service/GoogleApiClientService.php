@@ -13,6 +13,7 @@ use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;
  */
 class GoogleApiClientService
 {
+
     /**
      * Application name
      *
@@ -58,7 +59,7 @@ class GoogleApiClientService
     {
         $client = new Google_Client();
         $client->setApplicationName($this->applicationName);
-        $client->setAuthConfig(__DIR__ . $this->clientSecret);
+        $client->setAuthConfig($this->clientSecret);
         $client->setAccessType($type);
         return $client;
     }
