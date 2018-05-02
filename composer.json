@@ -2,7 +2,7 @@
     "name": "exs/googlesheets-bundle",
     "type": "symfony-bundle",
     "description": "This bundle manages Google Spreadsheets sheet operations using Google api.",
-    "keywords": ["Symfony2", "bundle", "google", "spreadshhets", "api", "operation"],
+    "keywords": ["Symfony2", "bundle", "google", "spreadsheets", "api", "operation"],
     "homepage": "https://github.com/ExSituMarketing/EXS-GoogleSheetsBundle",
     "license": "MIT",
     "minimum-stability": "dev",
