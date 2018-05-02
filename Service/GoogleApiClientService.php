@@ -72,7 +72,7 @@ class GoogleApiClientService
      */
     public function setClientVerification(Google_Client $client)
     {
-        $credentialsPath = __DIR__ . $this->credentials;
+        $credentialsPath = $this->credentials;
         $accessToken = $this->getAccessToken($credentialsPath);
         $client->setAccessToken($accessToken);
         return $this->ValidateAccessToken($client, $credentialsPath);
@@ -117,7 +117,7 @@ class GoogleApiClientService
      */
     public function createNewAccessToken(Google_Client $client)
     {
-        $credentialsPath = __DIR__ . $this->credentials;
+        $credentialsPath = $this->credentials;
         $authCode = $this->getVerificationCode($client);
         $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
         try {

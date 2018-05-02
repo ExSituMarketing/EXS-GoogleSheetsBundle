@@ -45,7 +45,7 @@ public function registerBundles()
 ``` php
 exs_google_sheets:
     application_name: 'Google Sheets API'
-    credentials: '/Credentials/sheets.googleapis.com.json'
+    credentials: '%kernel.root_dir%/config/sheets.googleapis.com.json'
     client_secret: '%kernel.root_dir%/config/client_secret.json'
 ```
 Your credentials will be create by the bundle once you set the file location in the bundle.<br>
