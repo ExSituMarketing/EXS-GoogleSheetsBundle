@@ -20,12 +20,29 @@ class GoogleSheetsRequests
                 'properties' => [
                     "title" => $title,
                     "sheetType" => $type,
-                    "gridProperties" => $gidProperties
-                ]
+                    "gridProperties" => $this->getNewSheetRange($gidProperties)
+                ]                
             ]
         ];
     }
 
+    /**
+     * Set the default grid size
+     * 
+     * @param array $gidProperties
+     * @return array
+     */
+    public function getNewSheetRange($gidProperties = null)
+    {
+        if(empty($gidProperties)) {
+            $gidProperties = [
+                "rowCount" =>  1,
+                "columnCount" => 26                
+            ];
+        }
+        return $gidProperties;
+    }
+ 
     /**
      * Get clear sheet request
      * 
