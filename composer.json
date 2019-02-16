@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.3.9",
-        "symfony/symfony": "^2.7",
+        "symfony/symfony": "^3.0",
         "google/apiclient": "^2.0"    
     },
     "require-dev": {
