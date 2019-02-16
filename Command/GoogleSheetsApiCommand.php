@@ -29,7 +29,7 @@ class GoogleSheetsApiCommand extends ContainerAwareCommand
         $data = json_decode($input->getOption('data'));
         $header = $input->getOption('header');
     
-        $clientService = $this->getContainer()->get('exs_googles_heets.api_client_service');
+        $clientService = $this->getContainer()->get('exs_google_sheets.api_client_service');
         $service = $this->getContainer()->get('exs_google_sheets.sheets_service');
 
         $response = 'no action has been made';
